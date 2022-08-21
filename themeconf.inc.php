@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: Smart Pocket
-Version: 11.5.0
+Version: 12.3.0
 Description: Mobile theme.
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=599
 Author: P@t
@@ -119,7 +119,7 @@ function sp_end_section_init()
     array(
       'cat_id' => @$page['category']['id'],
       'section' => @$page['section'],
-      'tags_string' => @implode(',', @$page['tag_ids']),
+      'tags_string' => (isset($page['tag_ids']) ? implode(',', $page['tag_ids']) : ''),
       )
     );
 }
