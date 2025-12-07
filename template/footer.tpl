@@ -7,7 +7,7 @@
 {else}
 <div data-role="footer" class="pwg_footer">
   <h6>
-	{'Propelled by'|@translate}	<a href="{$PHPWG_URL}" class="Piwigo">Piwigo</a>
+	{'Powered by'|@translate}	<a href="{$PHPWG_URL}" class="Piwigo">Piwigo</a>
 	{$VERSION}
 	{if isset($CONTACT_MAIL)}
 	- {'Contact'|@translate}
